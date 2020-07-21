@@ -1,0 +1,4 @@
+根据振动计算中出现的虚频振动模式，设置新的初始结构进行结构优化，以消除虚频
+POSCAR(new)=POSCAR(old)+scal*natom*Σ[(j=1,njmode)((freq_j/i)/freq_j_max)*Q_j(R)]
+freq_j/i 取  f/i=   13.896664 THz  THZ为单位
+scal 取0.01(具体设置需要再设置)
